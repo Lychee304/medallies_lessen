@@ -3,3 +3,5 @@ hoi, dit is mijn verslag
 woord woord woord overnemende argument
 
 dank
+
+dit is mijn toevoeging.
