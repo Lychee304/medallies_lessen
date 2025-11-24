@@ -10,8 +10,8 @@ namespace Medallies_opdracht
     {
         static void Main(string[] args)
         {
-            Opdracht3 opdracht = new Opdracht3();
-            opdracht.WeatherAdvice();
+            Opdracht4 opdracht = new Opdracht4();
+            opdracht.AgeCal();
             /*
             
             Console.WriteLine("Hoe heet je?");
