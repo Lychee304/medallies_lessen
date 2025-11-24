@@ -14,6 +14,7 @@ namespace Medallies_opdracht
 
             Console.WriteLine("Kies een kant, links of rechts? stil staan is geen optie");
             string input = Console.ReadLine();
+            /*
 
             if (input == "links")
             {
@@ -66,5 +67,8 @@ namespace Medallies_opdracht
             }
 
 
-
+            */
+        }
+    }
+}
 

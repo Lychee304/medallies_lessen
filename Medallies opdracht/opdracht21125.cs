@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Medallies_opdracht
 {
-    internal class opdracht21125
+    internal class Opdracht21125
     {
+        /*
         static void (String[] args){
             Console.WriteLine(booleanReturn(5));
         }
@@ -17,5 +18,6 @@ namespace Medallies_opdracht
 
         return number > 0;
         }
+        */
     }
 }

@@ -10,17 +10,16 @@ namespace Medallies_opdracht
     {
         static void Main(string[] args)
         {
+            Opdracht3 opdracht = new Opdracht3();
+            opdracht.WeatherAdvice();
+            /*
             
             Console.WriteLine("Hoe heet je?");
             string input = Console.ReadLine();
             Console.WriteLine("en hoe oud ben je?");
             string input1 = Console.ReadLine();
             Console.WriteLine("Hoi " + input + ", je bent " + input1 + " jaar oud!");
-
-
-            string input1 = Console.ReadLine();
-            Console.WriteLine("Hoi " + input + ", je bent " + input1 + " jaar oud!");
-
+            */
         }
         }
     }
