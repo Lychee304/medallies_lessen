@@ -16,11 +16,9 @@ namespace Medallies_opdracht
             Console.WriteLine("vul het tweede nummer in");
             int input1 = int.Parse(Console.ReadLine());
 
-            int answer = input * input1;
-
-            for (int i = input; i < input1; i++)
+            for(int i = 1;i < input1 + 1; i++)
             {
-                Console.WriteLine(input + " X " + input1 + " = " + input * input1);
+                Console.WriteLine(input + " X " + i + " = " + input * i);
             }
         }
     }
