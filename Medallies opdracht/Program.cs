@@ -10,8 +10,8 @@ namespace Medallies_opdracht
     {
         static void Main(string[] args)
         {
-            Opdracht5 opdracht = new Opdracht5();
-            opdracht.TableForFor();
+            Opdracht6 opdracht = new Opdracht6();
+            opdracht.Guess();
             /*
             
             Console.WriteLine("Hoe heet je?");

@@ -26,7 +26,7 @@ namespace Medallies_opdracht
 
             // For loops
 
-            for(int i = 1;i < 11; i++)
+            for (int i = 1; i < 11; i++)
             {
                 Console.WriteLine("For loop: " + i);
             }
@@ -38,7 +38,7 @@ namespace Medallies_opdracht
             int numberEL = 0;
 
             int[] y = new int[10];
-            foreach(int number in y)
+            foreach (int number in y)
             {
                 numberEL += 1;
                 Console.WriteLine("For Each loop: " + numberEL);
