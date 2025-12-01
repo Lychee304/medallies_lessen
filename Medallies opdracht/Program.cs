@@ -8,11 +8,21 @@ namespace Medallies_opdracht
 {
     internal class Program
     {
+
+        private static string _fName = "amir";
+        private static string _lName = "amir";
+        private static string _age = 19;
+
         static void Main(string[] args)
         {
-            Opdracht6 opdracht = new Opdracht6();
-            opdracht.Guess();
+
+            Opdracht011225 student = new Opdracht011225(_fName, _lName, age);
+
+            
             /*
+            Opdracht011225 opdracht = new Opdracht011225();
+            opdracht.Class();
+            
             
             Console.WriteLine("Hoe heet je?");
             string input = Console.ReadLine();

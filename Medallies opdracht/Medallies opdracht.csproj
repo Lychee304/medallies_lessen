@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Opdracht011225.cs" />
     <Compile Include="Opdracht2.cs" />
     <Compile Include="Opdracht21125.cs" />
     <Compile Include="Opdracht241125.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="Opdracht4.cs" />
     <Compile Include="Opdracht5.cs" />
     <Compile Include="Opdracht6.cs" />
+    <Compile Include="Opdracht7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

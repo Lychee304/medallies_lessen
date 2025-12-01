@@ -21,10 +21,12 @@ namespace Medallies_opdracht
 
             bool running = true;
 
+            String welcome = "raad de nummer onder de 1000!";
+
             while (running)
             {
                 Console.WriteLine(gNumber);
-                Console.WriteLine("raad de nummer onder de 1000!");
+                Console.WriteLine(welcome);
                 int answer = int.Parse(Console.ReadLine());
 
                 
