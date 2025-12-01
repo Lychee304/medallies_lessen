@@ -30,9 +30,14 @@ namespace Medallies_opdracht
                 int answer = int.Parse(Console.ReadLine());
 
                 
-                if(answer > 100)
+                if(answer > 1000)
                 {
                     Console.WriteLine("wat zei ik! >:(");
+                }
+
+                if(answer < 0)
+                {
+                    Console.WriteLine("we got a smart one here huh?");
                 }
 
                 if (answer == gNumber)
