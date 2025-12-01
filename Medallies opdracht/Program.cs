@@ -10,15 +10,15 @@ namespace Medallies_opdracht
     {
 
         private static string _fName = "amir";
-        private static string _lName = "amir";
-        private static string _age = 19;
+        private static string _lName = "allouti";
+        private static int _age = 19;
 
         static void Main(string[] args)
         {
 
-            Opdracht011225 student = new Opdracht011225(_fName, _lName, age);
+            Opdracht011225 student = new Opdracht011225(_fName, _lName, _age);
+            Opdracht011225 student2 = new Opdracht011225("first", "last", 69);
 
-            
             /*
             Opdracht011225 opdracht = new Opdracht011225();
             opdracht.Class();

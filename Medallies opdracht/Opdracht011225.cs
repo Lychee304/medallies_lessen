@@ -18,7 +18,7 @@ namespace Medallies_opdracht
             _fName = fName;
             _lName = lName;
             _age = age;
-            Console.WriteLine("hoi " + _fName + ", " + _lName + ", welcome bro :)");
+            Console.WriteLine("hoi " + fName + " " + lName + ", your " + age + " years old, welcome bro :)");
 
         }
 
