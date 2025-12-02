@@ -9,6 +9,7 @@ namespace Medallies_opdracht
 {
     internal class Opdracht8b
     {
+        /*
 
         private static string _playerName = "amir";
         static void Main(string[] args)
@@ -24,5 +25,6 @@ namespace Medallies_opdracht
             Opdracht8a player3 = new Opdracht8a("class construction ltd", 420, 69);
             Console.WriteLine(player3.ShowStats());
         }
+        */
     }
 }

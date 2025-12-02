@@ -9,22 +9,38 @@ namespace Medallies_opdracht
 {
     internal class Opdracht011225
     {
-        /*
         private string _name;
-        private int _level;
-        private int _lives;
+        private int _health;
 
-        public Opdracht011225(string name, int level, int lives)
+        public Opdracht011225(string name, int hp, bool spawned, float speed)
         {
             _name = name;
-            _level = level;
-            _lives = lives;
+            _health = hp;
+            Console.WriteLine("hoi " + _name + ", welcome bro :)");
 
         }
-        public string ShowStats()
+
+        public void SayHello()
         {
-            return "hi, i am " + _name + ", i have " + _level + " health and " + _lives + " lives!";
+            Console.WriteLine("nice to meet you");
         }
-        */
+
+        public void TakeDamage(int damageAmount)
+        {
+            Console.WriteLine("oh damn i lost " + damageAmount);
+            _health -= damageAmount;
+            Console.WriteLine("i have this amount of hp left: " + _health);
+        }
+
+        public void changeName(string newName)
+        {
+            _name = newName;
+            Console.WriteLine("My new name is: " + _name);
+        }
+
+        public string getCharacterInfo()
+        {
+            return "hi, i am " + _name + ", i have " + _health + " health left";
+        }
     }
 }
