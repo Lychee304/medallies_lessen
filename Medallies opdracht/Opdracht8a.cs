@@ -7,14 +7,13 @@ using System.Xml;
 
 namespace Medallies_opdracht
 {
-    internal class Opdracht011225
+    internal class Opdracht8a
     {
-        /*
         private string _name;
         private int _level;
         private int _lives;
 
-        public Opdracht011225(string name, int level, int lives)
+        public Opdracht8a(string name, int level, int lives)
         {
             _name = name;
             _level = level;
@@ -25,6 +24,5 @@ namespace Medallies_opdracht
         {
             return "hi, i am " + _name + ", i have " + _level + " health and " + _lives + " lives!";
         }
-        */
     }
 }

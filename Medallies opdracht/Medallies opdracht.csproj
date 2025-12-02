@@ -53,6 +53,8 @@
     <Compile Include="Opdracht5.cs" />
     <Compile Include="Opdracht6.cs" />
     <Compile Include="Opdracht7.cs" />
+    <Compile Include="Opdracht8a.cs" />
+    <Compile Include="Opdracht8b.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
