@@ -7,15 +7,34 @@ using System.Threading.Tasks;
 
 namespace Medallies_opdracht
 {
-    internal class Program
+    internal class UserP
     {
 
         private static string _playerName = "amir";
         static void Main(string[] args)
         {
+            bool admin = false;
+            Console.WriteLine("enter yo name for a new account bruv");
+            string userInput = Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("enter yo password for da protecc");
+            string userInputPass = Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("enter yo age no lyin");
+            int userInputAge = int.Parse(Console.ReadLine());
+
+            if (userInput.ToLower() == "amir")
+            {
+                admin = true;
+            }
 
 
 
+            User user1 = new User(userInput, userInputPass, userInputAge, 69, admin);
+            user1.Login();
 
 
 
