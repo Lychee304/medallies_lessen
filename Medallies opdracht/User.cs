@@ -8,6 +8,7 @@ namespace Medallies_opdracht
 {
     internal class User
     {
+        /*
         private string _name;
         private string _password;
         private int _age;
@@ -35,5 +36,6 @@ namespace Medallies_opdracht
                 Console.WriteLine("hey '" + _name + "' the user, how does it feel to not be admin? lol");
             }
         }
+        */
     }
 }

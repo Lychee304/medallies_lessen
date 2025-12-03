@@ -10,6 +10,8 @@ namespace Medallies_opdracht
     internal class UserP
     {
 
+        /*
+
         private static string _playerName = "amir";
         static void Main(string[] args)
         {
@@ -58,7 +60,7 @@ namespace Medallies_opdracht
             Console.WriteLine("en hoe oud ben je?");
             string input1 = Console.ReadLine();
             Console.WriteLine("Hoi " + input + ", je bent " + input1 + " jaar oud!");
-            */
         }
+    */
     }
 }

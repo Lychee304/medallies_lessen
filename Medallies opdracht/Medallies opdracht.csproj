@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Opdracht011225.cs" />
+    <Compile Include="Opdracht9.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Opdracht2.cs" />
     <Compile Include="Opdracht21125.cs" />
