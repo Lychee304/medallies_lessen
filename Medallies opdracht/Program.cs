@@ -11,13 +11,28 @@ namespace Medallies_opdracht
     internal class Program
     {
 
-        private static string _weaponName = "Gouden Prikker";
+        private static string _weaponName = "Goude Prikker";
         static void Main(string[] args)
         {
 
-            Opdracht9 weapon = new Opdracht9(_weaponName, 10);
+            Opdracht9 weapon1 = new Opdracht9(_weaponName, 10);
+            Opdracht9 weapon2 = new Opdracht9("pew pew", 2);
+            Opdracht9 weapon3 = new Opdracht9("Pikachu", 55);
+            Opdracht9 weapon4 = new Opdracht9("Carl Johnson", 69);
 
-            weapon.showStats();
+            weapon1.showStats();
+            weapon1.UpgradeItem();
+
+            weapon2.showStats();
+            weapon2.UpgradeItem();
+
+            weapon3.showStats();
+            weapon3.UpgradeItem();
+
+            weapon4.showStats();
+            weapon4.UpgradeItem();
+
+
             /*
             Opdracht011225 opdracht = new Opdracht011225();
             opdracht.Class();
