@@ -12,6 +12,12 @@ namespace Medallies_opdracht
     {
         static void Main(String[] args)
         {
+            Opdracht4 opdracht = new Opdracht4();
+            opdracht.AgeCal();
+
+            /*
+
+
             List<Car> carList = new List<Car>();
 
             Car car1 = new Car("Agila", "Opel", 5);
@@ -25,7 +31,7 @@ namespace Medallies_opdracht
                 car.PrintCarInfo();
             }
 
-            /*
+            
 
             private static string _weaponName = "Goude Prikker";
             static void Main(string[] args)
@@ -49,9 +55,6 @@ namespace Medallies_opdracht
                 weapon4.UpgradeItem();
 
 
-
-                Opdracht011225 opdracht = new Opdracht011225();
-                opdracht.Class();
 
 
                 Console.WriteLine("Hoe heet je?");
