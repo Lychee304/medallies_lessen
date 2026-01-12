@@ -13,7 +13,7 @@ namespace Medallies_opdracht
 
         public void Guess()
         {
-            Console.WriteLine("vul een cijfer tussen 10 en 2.147.483.647!");
+            Console.WriteLine("vul een cijfer tussen 2 en 2.147.483.647!");
             int eNumber = int.Parse(Console.ReadLine());
 
             Random number = new Random();
