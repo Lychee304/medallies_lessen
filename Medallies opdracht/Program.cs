@@ -12,8 +12,8 @@ namespace Medallies_opdracht
     {
         static void Main(String[] args)
         {
-            Opdracht4 opdracht = new Opdracht4();
-            opdracht.AgeCal();
+            Opdracht6 Guess = new Opdracht6();
+            Guess.Guess();
 
             /*
 

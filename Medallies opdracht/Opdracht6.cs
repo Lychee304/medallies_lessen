@@ -13,7 +13,7 @@ namespace Medallies_opdracht
         {
             Random number = new Random();
 
-            int gNumber = number.Next(1, 1001);
+            int gNumber = number.Next(0, 1001);
 
             int almostU = gNumber - 10;
 
@@ -21,29 +21,34 @@ namespace Medallies_opdracht
 
             bool running = true;
 
-            String welcome = "raad de nummer onder de 1000!";
+            String welcome = "raad de nummer tussen de 0 en 1000!";
+
+            bool answerA1000 = false;
+            bool answerU0 = false;
 
             while (running)
             {
-                Console.WriteLine(gNumber);
                 Console.WriteLine(welcome);
                 int answer = int.Parse(Console.ReadLine());
 
                 
                 if(answer > 1000)
                 {
-                    Console.WriteLine("wat zei ik! >:(");
+                    answerA1000 = true;
+                    running = false;
+                    answerU0 = false;
                 }
 
                 if(answer < 0)
                 {
-                    Console.WriteLine("we got a smart one here huh?");
+                    answerU0 = true;
+                    running = false;
+                    answerA1000 = false;
                 }
 
                 if (answer == gNumber)
                 {
                     running = false;
-                    Console.WriteLine("De geheime nummer was: " + gNumber + "!");
                 } else if (answer > almostU && answer < gNumber)
                 {
                     Console.WriteLine("ietsjes meer!");
@@ -55,6 +60,20 @@ namespace Medallies_opdracht
 
 
                 Console.Clear();
+            }
+
+            Console.WriteLine("De geheime nummer was: " + gNumber + "!");
+
+            if(answerA1000 != false)
+            {
+                Console.WriteLine("helaas win je niet omdat je meer dan 1000 heb ingevoerd :(");
+                
+            }
+            
+            if(answerU0 != false)
+            {
+                Console.WriteLine("was ik niet duidelijk? je mocht niet onder de 0  :(");
+                answerA1000 = false;
             }
 
         }
