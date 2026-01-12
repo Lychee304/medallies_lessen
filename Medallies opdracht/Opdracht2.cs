@@ -12,10 +12,32 @@ namespace Medallies_opdracht
         {
             Opdracht2 test = new Opdracht2();
 
-            Console.WriteLine("Kies een kant, links of rechts? stil staan is geen optie");
+            Console.WriteLine("Kies een kant, links of rechts? stil staan is geen optie (voer L in voor links en R voor rechts, voer A in als een 3de optie mogelijk is)");
             string input = Console.ReadLine();
-            /*
 
+            if(input == "L")
+            {
+
+                Console.WriteLine("je bent links gegaan, je zit in de woonkamer, en nu?");
+                string inputL = Console.ReadLine();
+
+                if(inputL == "L")
+                {
+                    Console.WriteLine("je bent links naar buiten gegaan, je staat buiten, ga je links, rechts of rechtdoor?");
+                    string inputL2 = Console.ReadLine();
+
+                    if(inputL2 == "L")
+                    {
+                        Console.WriteLine("je staat bij de voordeur, toevallig zit er een monster die wou inbreken, hij eet je, je hebt verloren!");
+                    }
+                }
+
+            } else if(input == "R")
+            {
+                Console.WriteLine("er zit een trap, als je deze bent op gegaan kan je links en rechts");
+            }
+            
+            /*
             if (input == "links")
             {
                 Console.WriteLine("je bent de linker kamer in gegaan, je bevind je in de woonkamer, waar ga je nu heen, links of rechts?");
@@ -66,8 +88,8 @@ namespace Medallies_opdracht
                 Console.WriteLine("er viel een monster op je, je hebt verloren!");
             }
 
-
             */
+            
         }
     }
 }
