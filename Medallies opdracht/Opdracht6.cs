@@ -13,9 +13,12 @@ namespace Medallies_opdracht
 
         public void Guess()
         {
+            Console.WriteLine("vul een cijfer tussen 10 en 2.147.483.647!");
+            int eNumber = int.Parse(Console.ReadLine());
+
             Random number = new Random();
 
-            int gNumber = number.Next(0, 1001); // make it adjustable, than gold :D
+            int gNumber = number.Next(0, eNumber); // make it adjustable, than gold :D
 
             int almostU = gNumber - 10;
 
@@ -25,7 +28,7 @@ namespace Medallies_opdracht
 
             int enter = 0;
 
-            String welcome = "raad de nummer tussen de 0 en 1000!";
+            String welcome = "raad de nummer tussen de 0 en " + eNumber + "!";
 
             bool answerA1000 = false;
             bool answerU0 = false;
@@ -42,7 +45,7 @@ namespace Medallies_opdracht
                     enter++;
                 }
                 
-                if(answer > 1000)
+                if(answer > eNumber)
                 {
                     answerA1000 = true;
                     running = false;
@@ -75,7 +78,7 @@ namespace Medallies_opdracht
 
             if(answerA1000 != false)
             {
-                Console.WriteLine("helaas win je niet omdat je meer dan 1000 heb ingevoerd :(");
+                Console.WriteLine("helaas win je niet omdat je meer dan " + eNumber + " heb ingevoerd, je hebt t nummer zelf uitgekozen! :(");
                 
             }
             

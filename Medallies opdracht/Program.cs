@@ -12,10 +12,16 @@ namespace Medallies_opdracht
     {
         static void Main(String[] args)
         {
+
+            Opdracht6 guess = new Opdracht6();
+            guess.Guess();
+
+            /*
+
             Opdracht2 opdracht = new Opdracht2();
             opdracht.Opdracht();
 
-            /*
+            
 
 
             List<Car> carList = new List<Car>();
@@ -64,6 +70,6 @@ namespace Medallies_opdracht
                 Console.WriteLine("Hoi " + input + ", je bent " + input1 + " jaar oud!");
                 */
         }
-        
+
     }
 }
