@@ -15,7 +15,7 @@ namespace Medallies_opdracht
         {
             Random number = new Random();
 
-            int gNumber = number.Next(0, 1001);
+            int gNumber = number.Next(0, 1001); // make it adjustable, than gold :D
 
             int almostU = gNumber - 10;
 
@@ -81,7 +81,7 @@ namespace Medallies_opdracht
             
             if(answerU0 != false)
             {
-                Console.WriteLine("was ik niet duidelijk? je mocht niet onder de 0  :(");
+                Console.WriteLine("was ik niet duidelijk? je mocht niet onder de 0, je hebt niet gewonnen  :(");
                 answerA1000 = false;
             }
 
