@@ -13,8 +13,8 @@ namespace Medallies_opdracht
         static void Main(String[] args)
         {
 
-            Opdracht2 opdracht = new Opdracht2();
-            opdracht.Opdracht();
+            Opdracht10 palindrome = new Opdracht10();
+            palindrome.Palindrome();
 
             /*
 
