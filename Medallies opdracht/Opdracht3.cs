@@ -11,12 +11,13 @@ namespace Medallies_opdracht
 
         public void WeatherAdvice()
         {
-            try
-            {
-                Console.WriteLine("wat is het weer? zonnig, regen of bewolkt?");
-                string input = Console.ReadLine();
 
-                if (input == "zonnig")
+            Console.WriteLine("wat is het weer? zonnig, regen of bewolkt?");
+            string input = Console.ReadLine();
+
+            if (input == "zonnig")
+            {
+                try
                 {
                     Console.WriteLine("hoeveel graden is het?");
                     int input1 = int.Parse(Console.ReadLine());
@@ -50,21 +51,23 @@ namespace Medallies_opdracht
                         Console.WriteLine("zoek een airconditioned ruimte, je hebt t nodig!");
                     }
                 }
-                else if (input == "bewolkt")
+                catch (Exception e)
                 {
-                    Console.WriteLine("Dit is de beste weer, je hebt gewonnen");
+                    Console.WriteLine(e.Message);
                 }
-                else if (input == "regen")
-                {
-                    Console.WriteLine("Neem je paraplu mee!");
-                }
-                {
-                    Console.WriteLine("nee dit kennen we nie!");
-                }
-            } catch (Exception)
-            {
-
             }
+            else if (input == "bewolkt")
+            {
+                Console.WriteLine("Dit is de beste weer, je hebt gewonnen");
+            }
+            else if (input == "regen")
+            {
+                Console.WriteLine("Neem je paraplu mee!");
+            }
+            {
+                Console.WriteLine("nee dit kennen we nie!");
+            }
+
         }
     }
 }
