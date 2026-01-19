@@ -13,8 +13,8 @@ namespace Medallies_opdracht
         static void Main(String[] args)
         {
 
-            Opdracht3 weatherAdvice = new Opdracht3();
-            weatherAdvice.WeatherAdvice();
+            WaterStone WaterStonePV = new WaterStone();
+            WaterStonePV.WaterStonePV();
 
             /*
 

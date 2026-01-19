@@ -48,6 +48,7 @@
     <Compile Include="Opdracht10.cs" />
     <Compile Include="Opdracht11.cs" />
     <Compile Include="Opdracht9.cs" />
+    <Compile Include="WaterStone.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Opdracht2.cs" />
     <Compile Include="Opdracht21125.cs" />
