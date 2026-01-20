@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 namespace Medallies_opdracht
 {
 
-    // when there are 5 errors, add the }, yes really
+    // when there are 5 errors, add the } by the intro, yes really
 
 
     internal class WaterStone // im writing this at 10:00 on 19-01-2026, this could be a mistake? | not even 2 hours later and i decided to make me own and not undertale. lol
     { // ██
 
 
-        String Jake = "Jake"; // if you skip the intro, it has a default name
+        String Jake = "";
         String introDiaSkip = "";
 
         String playerName = "Man-with-no-name"; // if you skip the intro, it has a default name, except this one is just funny lol
@@ -54,7 +54,7 @@ namespace Medallies_opdracht
             Console.WriteLine(" wanna hear the intro? (Y) for yes, (N) for no (please man i spend a lot of time on it)");
             String input = Console.ReadLine();
 
-            if (input == "Y")
+            if (input == "Y" || input == "N")
             {
                 Console.Clear();
                 TextUtilities.Type("Alright so, long long ago in a mysterious place, a person was born, he had 1 goal he said:", 50);
@@ -62,11 +62,13 @@ namespace Medallies_opdracht
 
                 if (introDia == "")
                 {
-                    TextUtilities.Type("'goo goo ga ga'", 50);
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TextUtilities.Type("'goo goo ga ga'", 80);
                     String introDia1 = Console.ReadLine();
 
                     if (introDia1 == "")
                     {
+                        Console.ResetColor();
                         TextUtilities.Type("what did you expect? its a baby!", 50);
                         String introDia2 = Console.ReadLine();
 
@@ -90,7 +92,7 @@ namespace Medallies_opdracht
 
                                     if (introDiaSkip == "")
                                     {
-                                        TextUtilities.Type("ohh yea! " + Jake + "! hell, " + Jake + " over here is so respected, Carl Johnson from the 2004 hit video game Grand Theft Auto: San Andreas actually hangs out with him from time to time", 50); // told ya i was creative
+                                        TextUtilities.Type("ohh yea! " + Jake + "! hell, " + Jake + " over here is so respected, Carl Johnson from the 2004 hit video game 'Grand Theft Auto: San Andreas' actually hangs out with him from time to time", 50); // told ya i was creative
                                         String introDia6 = Console.ReadLine();
                                         playerName = "";
 
@@ -104,7 +106,7 @@ namespace Medallies_opdracht
                                             if (introDiaSkip == "")
                                             {
 
-                                                TextUtilities.Type("ooooh! " + playerName + ", thats a nice name!", 50);
+                                                TextUtilities.Type("ooooh! '" + playerName + "', thats a nice name!", 50);
                                                 String introDia8 = Console.ReadLine();
 
                                                 if (introDia8 == "")
@@ -130,14 +132,14 @@ namespace Medallies_opdracht
                                                             if (introDia11 == "")
                                                             {
 
-                                                                TextUtilities.Type("economically and stable wise", 50);
+                                                                TextUtilities.Type("economically and stable wise, those poor horsies :( ", 50);
                                                                 String introDia12 = Console.ReadLine();
 
 
                                                                 if (introDia12 == "")
                                                                 {
 
-                                                                    TextUtilities.Type("those poor horsies :( oh yeah and its people are fed up with the king so yeah its unstable too!", 50);
+                                                                    TextUtilities.Type("oh yeah and its people are fed up with the king so yeah its unstable too!", 50);
                                                                     String introDia13 = Console.ReadLine();
 
 
@@ -196,11 +198,83 @@ namespace Medallies_opdracht
                                                                                                         TextUtilities.Type("seeing them fight makes you filled with motivation to join them! oh yea CJ was there doing cheats so idk", 50);
                                                                                                         String introDia22 = Console.ReadLine();
 
-                                                                                                        if (introDia22 == "")
+                                                                                                        if (introDia22 == "" || input == "N")
                                                                                                         {
                                                                                                             TextUtilities.Type("they went away as soon as the dragon retreated, where did it retread to? its probably not important!", 50);
                                                                                                             String introDia23 = Console.ReadLine();
+
+                                                                                                            if (introDia23 == "")
+                                                                                                            {
+                                                                                                                TextUtilities.Type("so you got to " + Jake + "'s castle and asked to join, then.. there he was!", 50);
+                                                                                                                String introDia24 = Console.ReadLine();
+
+                                                                                                                if (introDia24 == "")
+                                                                                                                {
+                                                                                                                    Console.ForegroundColor = ConsoleColor.Green;
+                                                                                                                    TextUtilities.Type("'so, you want to join huh?'", 80);
+                                                                                                                    Console.ResetColor();
+                                                                                                                    TextUtilities.Type(Jake + " asked, what do you tell him?", 50);
+                                                                                                                    Console.WriteLine(" ");
+                                                                                                                    Console.WriteLine("A: Yes! please take me!");
+                                                                                                                    Console.WriteLine("B: if you do let me join, i'll slide you a cup of Mountain Dew Baja Blast");
+                                                                                                                    Console.WriteLine("C: no i'm here to look at the ceiling, ofcourse i wanna join dumbass!");
+                                                                                                                    String introDia25 = Console.ReadLine();
+
+                                                                                                                    if (introDia25 == "A")
+                                                                                                                    {
+                                                                                                                        Console.ForegroundColor = ConsoleColor.Cyan;
+                                                                                                                        TextUtilities.Type("Yes! please take me!", 80);
+
+                                                                                                                        Console.WriteLine(" ");
+
+                                                                                                                        Console.ForegroundColor = ConsoleColor.Green;
+                                                                                                                        TextUtilities.Type("Very well! follow me", 80);
+                                                                                                                        String introDia26A = Console.ReadLine();
+
+                                                                                                                        if (introDia26A == "")
+                                                                                                                        {
+                                                                                                                            TextUtilities.Type("they went away as soon as the dragon retreated, where did it retread to? its probably not important!", 50);
+                                                                                                                            String introDia27A = Console.ReadLine();
+                                                                                                                        }
+
+
+
+
+
+                                                                                                                        else if (introDia25 == "B")
+                                                                                                                        {
+                                                                                                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                                                                                                            TextUtilities.Type("if you do let me join, i'll slide you a cup of Mountain Dew Baja Blast", 80);
+
+                                                                                                                            Console.WriteLine(" ");
+
+                                                                                                                            Console.ForegroundColor = ConsoleColor.Green;
+                                                                                                                            TextUtilities.Type("Do you think i will accept that? you're absolutly right, follow me!", 80);
+
+                                                                                                                            String introDia26B = Console.ReadLine();
+                                                                                                                        }
+
+
+
+
+
+                                                                                                                        else if (introDia25 == "C")
+                                                                                                                        {
+                                                                                                                            Console.ForegroundColor = ConsoleColor.Cyan;
+                                                                                                                            TextUtilities.Type("no i'm here to look at the ceiling, ofcourse i wanna join dumbass!", 80);
+
+                                                                                                                            Console.WriteLine(" ");
+
+                                                                                                                            Console.ForegroundColor = ConsoleColor.Green;
+                                                                                                                            TextUtilities.Type("Dumbass!? who are you calling a dumbass!? get lost kid your not welcome here!", 80);
+
+                                                                                                                            String introDia26C = Console.ReadLine();
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
                                                                                                         }
+                                                                                                    
 
                                                                                                     }
                                                                                                 }
