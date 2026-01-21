@@ -16,7 +16,7 @@ namespace Medallies_opdracht
     { // ██
 
 
-        String Jake = "";
+        String Jake = "Jake"; // default name for intro skippers (whyyyy D:> )
         String introDiaSkip = "";
 
         String playerName = "Man-with-no-name"; // if you skip the intro, it has a default name, except this one is just funny lol
@@ -54,7 +54,7 @@ namespace Medallies_opdracht
             Console.WriteLine(" wanna hear the intro? (Y) for yes, (N) for no (please man i spend a lot of time on it)");
             String input = Console.ReadLine();
 
-            if (input == "Y" || input == "N")
+            if (input == "Y")
             {
                 Console.Clear();
                 TextUtilities.Type("Alright so, long long ago in a mysterious place, a person was born, he had 1 goal he said:", 50);
@@ -92,7 +92,7 @@ namespace Medallies_opdracht
 
                                     if (introDiaSkip == "")
                                     {
-                                        TextUtilities.Type("ohh yea! " + Jake + "! hell, " + Jake + " over here is so respected, Carl Johnson from the 2004 hit video game 'Grand Theft Auto: San Andreas' actually hangs out with him from time to time", 50); // told ya i was creative
+                                        TextUtilities.Type("ohh yea! '" + Jake + "'! hell, " + Jake + " over here is so respected, Carl Johnson from the 2004 hit video game 'Grand Theft Auto: San Andreas' actually hangs out with him from time to time", 50); // told ya i was creative
                                         String introDia6 = Console.ReadLine();
                                         playerName = "";
 
@@ -198,7 +198,7 @@ namespace Medallies_opdracht
                                                                                                         TextUtilities.Type("seeing them fight makes you filled with motivation to join them! oh yea CJ was there doing cheats so idk", 50);
                                                                                                         String introDia22 = Console.ReadLine();
 
-                                                                                                        if (introDia22 == "" || input == "N")
+                                                                                                        if (introDia22 == "")
                                                                                                         {
                                                                                                             TextUtilities.Type("they went away as soon as the dragon retreated, where did it retread to? its probably not important!", 50);
                                                                                                             String introDia23 = Console.ReadLine();
@@ -208,7 +208,7 @@ namespace Medallies_opdracht
                                                                                                                 TextUtilities.Type("so you got to " + Jake + "'s castle and asked to join, then.. there he was!", 50);
                                                                                                                 String introDia24 = Console.ReadLine();
 
-                                                                                                                if (introDia24 == "")
+                                                                                                                if (introDia24 == "" || input == "N")
                                                                                                                 {
                                                                                                                     Console.ForegroundColor = ConsoleColor.Green;
                                                                                                                     TextUtilities.Type("'so, you want to join huh?'", 80);
@@ -218,6 +218,7 @@ namespace Medallies_opdracht
                                                                                                                     Console.WriteLine("A: Yes! please take me!");
                                                                                                                     Console.WriteLine("B: if you do let me join, i'll slide you a cup of Mountain Dew Baja Blast");
                                                                                                                     Console.WriteLine("C: no i'm here to look at the ceiling, ofcourse i wanna join dumbass!");
+
                                                                                                                     String introDia25 = Console.ReadLine();
 
                                                                                                                     if (introDia25 == "A")
@@ -274,8 +275,6 @@ namespace Medallies_opdracht
                                                                                                                 }
                                                                                                             }
                                                                                                         }
-                                                                                                    
-
                                                                                                     }
                                                                                                 }
                                                                                             }
