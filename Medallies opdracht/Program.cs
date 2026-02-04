@@ -1,7 +1,6 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +12,24 @@ namespace Medallies_opdracht
         static void Main(String[] args)
         {
 
-            WaterStone WaterStonePV = new WaterStone();
-            WaterStonePV.WaterStonePV();
+
+            Klant klantinfo = new Klant();
+            klantinfo.KlantInfo();
+
+            List<Klant> KlantenLijst = new List<Klant>();
+   
+
+            Klant Klant1 = new Klant(1, "Big Smoke", "BScluckin@bell.com", "Number9", "01-01-1992");
+            Klant Klant2 = new Klant(2, "Ryder", "robbin@pizzaco.com", "PCPwater", "01-01-1992");
+
+            KlantenLijst.Add(Klant1);
+            KlantenLijst.Add(Klant2);
+
+            foreach(Klant klant in KlantenLijst)
+            {
+                klant.PrintKlantInfo();
+            }
+        }
 
             /*
 
@@ -69,7 +84,7 @@ namespace Medallies_opdracht
                 string input1 = Console.ReadLine();
                 Console.WriteLine("Hoi " + input + ", je bent " + input1 + " jaar oud!");
                 */
-        }
+        
 
     }
 }

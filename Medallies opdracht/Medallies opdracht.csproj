@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administratie.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="Klant.cs" />
     <Compile Include="Opdracht011225.cs" />
     <Compile Include="Opdracht10.cs" />
     <Compile Include="Opdracht11.cs" />
