@@ -14,21 +14,24 @@ namespace Medallies_opdracht
 
 
             Klant klantinfo = new Klant();
-            klantinfo.KlantInfo();
-
-            List<Klant> KlantenLijst = new List<Klant>();
+            Klant.KlantInfo();
+            
+            List<Klant> KlantenList = new List<Klant>();
    
 
             Klant Klant1 = new Klant(1, "Big Smoke", "BScluckin@bell.com", "Number9", "01-01-1992");
-            Klant Klant2 = new Klant(2, "Ryder", "robbin@pizzaco.com", "PCPwater", "01-01-1992");
+            Klant1.PrintKlantInfo();
 
-            KlantenLijst.Add(Klant1);
-            KlantenLijst.Add(Klant2);
+            KlantenList.Add(Klant1);
 
-            foreach(Klant klant in KlantenLijst)
+            
+
+            foreach(Klant klant in KlantenList)
             {
                 klant.PrintKlantInfo();
             }
+
+            
         }
 
             /*

@@ -23,9 +23,9 @@ namespace Medallies_opdracht
             _birth = birth;
         }
 
-        public void PrintKlantInfo()
+        public String PrintKlantInfo()
         {
-            Console.WriteLine($"klant id: {_id}, name: {_name}, email of klant: {_email}, password of klant: {_password}, birthdate of klant: {_birth}");
+            return "klant id: " + _id + ", name: " + _name + ", email of klant: " + _email + ", password of klant: " + _password + ", birthdate of klant: " + _birth;
         }
     }
 }
