@@ -13,8 +13,13 @@ namespace Medallies_opdracht
         {
 
 
-            Klant klantinfo = new Klant();
-            Klant.KlantInfo();
+            Product product = new Product(12);
+            Console.WriteLine(product.Prijs);
+            product.Prijs = 108;
+
+            Console.WriteLine(product.Prijs);
+        }
+            /*
             
             List<Klant> KlantenList = new List<Klant>();
    
@@ -34,7 +39,7 @@ namespace Medallies_opdracht
             
         }
 
-            /*
+            
 
             Opdracht2 opdracht = new Opdracht2();
             opdracht.Opdracht();
